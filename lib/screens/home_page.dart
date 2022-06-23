@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:responsive_website/widgets/bottom_bar.dart';
+import 'package:responsive_website/widgets/business_card.dart';
 import 'package:responsive_website/widgets/carousel.dart';
 import 'package:responsive_website/widgets/featured_heading.dart';
 import 'package:responsive_website/widgets/featured_tiles.dart';
@@ -72,18 +73,20 @@ class _HomePageState extends State<HomePage> {
         controller: _scrollController,
         child: Column(
           children: [
+           // BusinessCard(),
             Stack(
               //overlap
               children: [
-                SizedBox(
-                  height: screenSize.height * 0.65,
-                  //using 60% of screen height
-                  width: screenSize.width,
-                  child: Image.asset(
-                    'assets/images/background.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                // SizedBox(
+                //   height: screenSize.height * 0.65,
+                //   //using 60% of screen height
+                //   width: screenSize.width,
+                //   child: Image.asset(
+                //     'assets/images/background.png',
+                //     fit: BoxFit.cover,
+                //   ),
+                // ),
+                Center(child: BusinessCard()),
                 Column(
                   children: [
                     FloatingQuickAccessBar(screenSize: screenSize),

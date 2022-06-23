@@ -48,7 +48,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                         width: screenSize.width / 4,
                       ),
                       const Text(
-                        "Author",
+                        "CK",
                         style: TextStyle(
                           color: Color(0xFF077bd7),
                           fontSize: 26,
@@ -112,7 +112,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              'About',
+                              'Projects',
                               style: TextStyle(
                                   color: _isHovering[1]
                                       ? Color(0xFF077bd7)
@@ -150,7 +150,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              'History',
+                              'About',
                               style: TextStyle(
                                   color: _isHovering[2]
                                       ? Color(0xFF077bd7)
